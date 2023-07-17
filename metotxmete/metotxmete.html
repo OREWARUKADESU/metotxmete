@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/global.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container header-content">
+        <a href="metotxmete.html"><img src="images/logo.png" /></a>
+        <nav>
+          <ul class="home">
+            <li><a href="metotxmete.html">HOME</a></li>
+            <li>ABOUT US</li>
+            <li>OUR SERVICE</li>
+            <li>TOUR PACKAGE</li>
+          </ul>
+          
+        </nav>
+<div class="topnav">
+          <div id="menu">
+            <a href="#news">TOUR PACKAGE</a>
+            <a href="#contact">OUR SERVICE</a>
+            <a href="#about">ABOUT US</a>
+          </div>       
+        </div>
+  
+        <label class="hamburger">
+          <input type="checkbox">
+          <svg viewBox="0 0 32 32" onclick="onClick()">
+            <path class="line line-top-bottom"
+              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+            </path>
+            <path class="line" d="M7 16 27 16"></path>
+          </svg>
+        </label>
+  
+        <script>
+          const onClick = () => {
+            const element = document.getElementById("menu");
+            if (element.style.display === "none") {
+              element.style.display = "inline";
+            } else {
+              element.style.display = "none";
+            }
+          }
+        </script>
+         
+        
+      </div>
+    </header>
+
+    <section class="section_1">
+      <div class="main_image">
+        <h1>Discover Greece</h1>
+        <h5>TRAVEL WITH UNIQUE EXPERIENCE</h5>
+      </div>
+    </section>
+
+    <section class="section_2">
+      <div class="container sec-2">
+        <div class="info_box">
+          <h5>DISCOVER</h5>
+          <h2>Our Hot Services</h2>
+          <p>
+            We hope you can visit and ths beautiful places with your friend and
+            favorite So you can share your feedback to us
+          </p>
+        </div>
+
+        <div class="card-container">
+          <div class="card-content">
+            <img src="images/smol1.jpg" alt="smol1" />
+            <h3>FLIGHT BOOKING</h3>
+            <p>
+              We hope you can visit and enjoy it ths beautiful places with your
+              friend and favorite people
+            </p>
+          </div>
+
+          <div class="card-content">
+            <img src="images/smol2.jpg" alt="smol2" />
+            <h3>HOTEL & RESORT BOOKING</h3>
+            <p>
+              We hope you can visit and enjoy it ths beautiful places with your
+              friend and favorite people
+            </p>
+          </div>
+
+          <div class="card-content">
+            <img src="images/smol3.jpg" alt="smol3" />
+            <h3>FAMILY TRIP PLANNER</h3>
+            <p>
+              We hope you can visit and enjoy it ths beautiful places with your
+              friend and favorite people
+            </p>
+          </div>
+
+          <div class="card-content">
+            <img src="images/smol4.jpg" alt="smol4" />
+            <h3>CRUISE TOUR</h3>
+            <p>
+              We hope you can visit and enjoy it ths beautiful places with your
+              friend and favorite people
+            </p>
+          </div>
+
+          <div class="card-content">
+            <img src="images/smol5.jpg" alt="smol5" />
+            <h3>FIRE CAMP</h3>
+            <p>
+              We hope you can visit and enjoy it ths beautiful places with your
+              friend and favorite people
+            </p>
+          </div>
+
+          <div class="card-content">
+            <img src="images/smol6.jpg" alt="smol6" />
+            <h3>CORPORATE HOLYDAYS</h3>
+            <p>
+              We hope you can visit and enjoy it ths beautiful places with your
+              friend and favorite people
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/icon.png" alt="backtotopicon"></button>
+    <script>
+      let mybutton = document.getElementById("myBtn");
+window.onscroll = function() {
+  scrollFunction();
+  appearFromBottom();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    mybutton.style.opacity = "1";
+  } else {
+    mybutton.style.opacity = "0";
+    setTimeout(() => {
+      mybutton.style.display = "none";
+    }, 300);
+  }
+}
+
+function appearFromBottom() {
+  if (window.pageYOffset > 20) {
+    mybutton.style.bottom = "20px";
+  } else {
+    mybutton.style.bottom = "-60px";
+  }
+}
+
+function topFunction() {
+  if (document.documentElement.scrollTop > 0) {
+    window.requestAnimationFrame(topFunction);
+    document.documentElement.scrollTop -= 20;
+  }
+}
+    </script>
+    
+  </body>
+</html>
